@@ -1,3 +1,4 @@
+import { TextField } from "@mui/material";
 import React, { type ChangeEvent } from "react";
 
 function Search (
@@ -8,7 +9,8 @@ function Search (
         handleSearch: (event: ChangeEvent<HTMLInputElement>) => void
     }) {
     return (
-        <input type="text" value={searchText} onChange={handleSearch} />
+
+        <TextField id="outlined-basic" size="small" label="Search" variant="outlined" value={searchText} onChange={handleSearch} />
     );
 }
 
